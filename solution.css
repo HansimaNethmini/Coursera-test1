@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+h1{
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+p{
+    border:1px solid black;
+    background-color: antiquewhite;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: Helvetica;
+    color: white;
+    
+}
+body{
+    font-family:Verdana;
+    color:#aaaaaa;
+}
+.london{
+    background-color:#f1f1f1;
+  padding:20px;
+  float:left;
+   
+}
+.paris{
+    background-color:#f1f1f1;
+  padding:20px;
+  float:left;
+   
+}
+.tokyo{
+     background-color:#f1f1f1;
+  padding:20px;
+  float:left;
+  
+}
+
+
+@media (min-width:992px) {
+  /* For desktop view: */
+  
+       .paris, .tokyo,.london {
+    width:33.33%;
+  }
+  }
+    
+
+@media screen and (min-width:768px) and (max-width:991px) {
+  /* For middle phones: */
+  .london, .paris{
+    width:50%;
+  }
+    .tokyo{
+        width: 100%
+    }
+   
+}
+@media (max-width:767px) {
+  /* For mobile phones: */
+  .london, .paris, .tokyo {
+    width:100%;
+}
+}
